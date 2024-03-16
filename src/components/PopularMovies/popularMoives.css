@@ -1,0 +1,66 @@
+.popular-movie-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bx{
+    position: relative;
+    width: 180px;
+    height: 290px;
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 20px;
+}
+.bx img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.bx .content{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    /* background-color: red; */
+    bottom: 0;
+    border-radius: 0px 0px 20px 20px;
+    z-index: 1;
+}
+.bx .content::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(185, 185, 185, .1);
+    border-radius: 0px 0px 20px 20px;
+    backdrop-filter: blur(5px); 
+    webkit-backdrop-filter: blur(5px);
+    transition: 2s all;
+    z-index: -1;
+}
+.content h3{
+    color: #fff;
+    padding: 3px 0px 0px 10px;
+    font-size: 11px;
+}
+.content p{
+    color: #fff;
+    padding: 5px 0px 0px 10px;
+    font-size: 13px;
+    margin-bottom: -5px;
+}
+.content h6{
+    margin-top: 10px;
+    margin-bottom: 9px;
+    color: #fff;
+    padding: 5px 0px 0px 10px;
+    font-size: 13px;
+}
+.content h6 span{
+    font-weight: bold;
+    color: #fff;
+    padding: 2px 5px 2px 5px;
+    font-size: 13px;
+    background-color: yellow;
+    border-radius: 5px;
+    color: black;
+}

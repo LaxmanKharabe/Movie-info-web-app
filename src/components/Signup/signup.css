@@ -1,0 +1,40 @@
+.login-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.message{
+    width: 364px !important;
+}
+.inputBox{
+    width: 364px;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.inputBox:focus {
+    outline: none;
+    border: none;
+}
+.text-sm{
+    font-size: 10x;
+    cursor: pointer;
+    color: blue;
+
+}
+.btn-login{
+    outline: none;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    height: 30px;
+    width: 364px;
+    padding: 5px 10px 5px 10px;
+}
+.btn-login:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
